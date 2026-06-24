@@ -6,7 +6,7 @@ document.addEventListener ('DOMContentLoaded', function(){
     const count = document.getElementById('count');
 
 
-    //  La funcion \s busca los espacios en el texto, la funcion /g es la que le dice que lo haga en todo el texto, se usa el .remplace para que cuando los busque e encuentre los reemplace
+    //  La funcion \s busca los espacios en el texto, la funcion /g es la que le dice que lo haga en todo el texto, se usa el .remplace para que cuando los busque e encuentre los replace
 
   function updateCount() {
     const textWithoutSpaces = input.value.replace(/\s/g, '');
