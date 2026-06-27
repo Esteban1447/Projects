@@ -41,5 +41,18 @@ button {
 
 button#clearBtn { background: #e0e6ef; color: #222; }
 
-#output { margin-top: 12px; font-weight: 600; min-height: 1.2em; }
-#count { color: #666; font-size: 0.9em; margin-top: 6px; }
+#output, #output2 {
+  margin-top: 12px;
+  font-weight: 600;
+  min-height: 1.2em;
+  text-align: center;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+#count, #count2 {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 6px;
+  text-align: center;
+}

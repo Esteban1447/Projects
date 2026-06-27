@@ -29,7 +29,7 @@ document.addEventListener ('DOMContentLoaded', function(){
       .filter(char => char === letter2)
       .length;
 
-    count2.textContent = letter.value + ': ' + aCount;
+    count2.textContent = letter.value ? `${letter.value.toUpperCase()}: ${aCount}` : '';
   }
 
   // Esta funcion junta las funciones que se repetian muchas veces para no copiar el mismo codigo en diferentes lugares
