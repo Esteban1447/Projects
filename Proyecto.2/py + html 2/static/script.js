@@ -74,10 +74,10 @@ button.addEventListener("click", async ()=> {
     }
 
     // Inserta resultados recibidos en el HTML
-    cantidad.textContent = data.sumary.cantidad;
-    promedio.textContent = data.sumary.promedio;
-    minimo.textContent = data.sumary.minimo;
-    maximo.textContent = data.sumary.maximo;
+    cantidad.textContent = data.summary.cantidad;
+    promedio.textContent = data.summary.promedio;
+    minimo.textContent = data.summary.minimo;
+    maximo.textContent = data.summary.maximo;
 
     // Carga la imagen generada por Python
     // Date.now evita que el navegador use una imagen vieja guardada
@@ -101,3 +101,6 @@ button.addEventListener("click", async ()=> {
     result.classList.add("hidden");
   }
 });
+
+// Verifica sí si se inicio el js
+console.log("App inciada")
