@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + JS + Python</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Mini proyecto base</h1>
+      <p>Envía datos desde HTML/JavaScript a Python y genera un gráfico con Matplotlib.</p>
+
+      <label for="values">Valores separados por coma</label>
+      <textarea id="values" rows="4">2,4,6,8,10</textarea>
+
+      <button id="sendBtn">Procesar datos</button>
+      <div id="status" class="status">Esperando datos...</div>
+
+      <section id="result" class="result hidden">
+        <h2>Resumen</h2>
+        <ul>
+          <li>Cantidad: <span id="cantidad">0</span></li>
+          <li>Promedio: <span id="promedio">0</span></li>
+          <li>Mínimo: <span id="minimo">0</span></li>
+          <li>Máximo: <span id="maximo">0</span></li>
+        </ul>
+        <img id="plotImage" alt="Gráfico generado por Python" />
+      </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
