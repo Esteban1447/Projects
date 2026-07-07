@@ -1,0 +1,15 @@
+Py:
+    el .get es para obtener algo de el json, lo que va despues de la coma seria el "Por defecto"
+
+    lo mas importante del .py seria entender que el .get saca los datos, los cuales ya se podrian procesar como datos de py
+
+    matplotlib.use("Agg")
+    es para que matplotlib no busque una interfaz grafica si no que cree la imagen directamente
+
+Script:
+    Se envia taks por que es la que contiene toda la data, no solo la tarea
+
+    Se hace un sendTask por cada funcion para que los datos sean siempre los certeros
+
+    Se borra solo con la funcion del script por que Flask no esta guardando nada, solo resibe la informacion y la actualiza cada vez que se envida la data
+
