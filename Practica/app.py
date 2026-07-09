@@ -14,14 +14,42 @@ def procesar():
 
     number1 = values.get("number1")
     number2 = values.get("number2")
+    operator = values.get("operator")
 
-    suma = number1 + number2
+    print(operator)
+    resultado = 0
+    
+    try:
+        number1 = float(number1)
+        number2 = float(number2)
+    except (TypeError, ValueError):
+        return jsonify({
+            "summary": {
+                "resultado": "Digite dos números"
+            }
+        })
+
+
+    match operator:
+        case "+":
+            resultado = number1 + number2            
+        case "-":
+            resultado = number1 - number2            
+        case "*":
+            resultado = number1 * number2            
+        case "/":
+            resultado = "El divisor no puede ser 0" if number2 == 0 else number1 / number2 
+        case _:
+            resultado = "Operador no valido"
+
+
+    
 
     return jsonify({
         "message": "Datos sumados",
 
         "summary": {
-            "suma" : suma
+            "resultado": resultado
         },
     })
 

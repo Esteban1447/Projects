@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const number1 = document.getElementById("number1");
     const number2 = document.getElementById("number2");
     const button = document.getElementById("bton");
-    const answerd = document.getElementById("answerd")
+    const answerd = document.getElementById("answerd");
+    const operator = document.getElementById("operator");
 
     button.addEventListener("click", async () => {
         let number11 = Number(number1.value);
@@ -15,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const values = {
         number1: number11,
-        number2: number22
+        number2: number22,
+        operator: operator.value
     };
 
 
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
         const data = await response.json();
-        answerd.textContent = data.summary.suma;
+        answerd.textContent = data.summary.resultado;
 
         console.log(data)
         }catch (error) {
